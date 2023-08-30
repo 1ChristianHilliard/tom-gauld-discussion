@@ -1,0 +1,17 @@
+- ./:
+    - response.md:
+        - description: response.md contains two paragraphs. 
+          check: CountFileParagraphs
+          options:
+            count: 2
+        - description: response.md contains at least 150 words
+          check: CountFileWords
+          options:
+            count: 150
+        - description: Includes a link to an ariticle
+          check: MatchFileFragment
+          options:
+            fragment: (http
+            count: 1
+
+      
